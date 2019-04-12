@@ -13,9 +13,7 @@ after_success:
   - docker build -t arghajeet/fibonacci-nginx-docker ./nginx
   - docker build -t arghajeet/fibonacci-server-docker ./server
   - docker build -t arghajeet/fibonacci-worker-docker ./worker
-  #Login docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  #Take above build & push it to docker hub
   - docker push arghajeet/fibonacci-client-docker
   - docker push arghajeet/fibonacci-nginx-docker
   - docker push arghajeet/fibonacci-server-docker
