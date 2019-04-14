@@ -1,6 +1,6 @@
 {
     "AWSEBDockerrunVersion": 2,
-    "containDefinations": [
+    "containerDefinitions": [
         {
             "name": "client",
             "image": "arghajeet/fibonacci-client-docker:latest",
