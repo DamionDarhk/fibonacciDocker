@@ -24,7 +24,7 @@
         },
         {
             "name": "nginx",
-            "image": "arghajeet/fibonacci-nginx-dockery",
+            "image": "arghajeet/fibonacci-nginx-docker",
             "hostname": "nginx",
             "essential": true,
             "portMapping": [
