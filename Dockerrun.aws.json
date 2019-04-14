@@ -3,25 +3,25 @@
     "containerDefinitions": [
         {
             "name": "client",
-            "image": "arghajeet/fibonacci-client-docker:latest",
+            "image": "arghajeet/fibonacci-client-docker",
             "hostname": "client",
             "essential": false
         },
         {
             "name": "server",
-            "image": "arghajeet/fibonacci-server-docker:latest",
+            "image": "arghajeet/fibonacci-server-docker",
             "hostname": "api",
             "essential": false
         },
         {
             "name": "worker",
-            "image": "arghajeet/fibonacci-worker-docker:latest",
+            "image": "arghajeet/fibonacci-worker-docker",
             "hostname": "worker",
             "essential": false
         },
         {
             "name": "nginx",
-            "image": "arghajeet/fibonacci-nginx-docker:latest",
+            "image": "arghajeet/fibonacci-nginx-dockery",
             "hostname": "nginx",
             "essential": true,
             "portMapping": [
